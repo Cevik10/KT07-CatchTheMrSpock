@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E86C0626"
+    >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/custom_start_button"
+        android:text="@string/start"
+
+
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/spockImage"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/no"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mrspock" />
+
+    <TextView
+        android:id="@+id/InfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/live_long_and_prosper"
+
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="31sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/scoreText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/spockImage1"
+            android:layout_width="123dp"
+            android:layout_height="155dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="incScore"
+            app:srcCompat="@drawable/mrspock"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/spockImage2"
+            android:layout_width="123dp"
+            android:layout_height="155dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:contentDescription="@string/no"
+            app:srcCompat="@drawable/mrspock" />
+
+        <ImageView
+            android:id="@+id/spockImage3"
+            android:layout_width="123dp"
+            android:layout_height="155dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:contentDescription="@string/no"
+            app:srcCompat="@drawable/mrspock" />
+
+        <ImageView
+            android:id="@+id/spockImage4"
+            android:layout_width="123dp"
+            android:layout_height="155dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:contentDescription="@string/no"
+            android:onClick="incScore"
+            app:srcCompat="@drawable/mrspock"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/spockImage5"
+            android:layout_width="123dp"
+            android:layout_height="155dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:contentDescription="@string/no"
+            app:srcCompat="@drawable/mrspock" />
+
+        <ImageView
+            android:id="@+id/spockImage6"
+            android:layout_width="123dp"
+            android:layout_height="155dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:contentDescription="@string/no"
+            app:srcCompat="@drawable/mrspock" />
+
+        <ImageView
+            android:id="@+id/spockImage7"
+            android:layout_width="123dp"
+            android:layout_height="155dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:contentDescription="@string/no"
+            android:onClick="incScore"
+            app:srcCompat="@drawable/mrspock"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/spockImage8"
+            android:layout_width="123dp"
+            android:layout_height="155dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:contentDescription="@string/no"
+            app:srcCompat="@drawable/mrspock" />
+
+        <ImageView
+            android:id="@+id/spockImage9"
+            android:layout_width="123dp"
+            android:layout_height="155dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:contentDescription="@string/no"
+            app:srcCompat="@drawable/mrspock" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Score: 0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="normal"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Time: 20 s"
+        android:textAlignment="center"
+        android:textColor="#C50808"
+        android:textSize="27sp"
+
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
