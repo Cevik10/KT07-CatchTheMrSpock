@@ -102,8 +102,6 @@ class MainActivity : AppCompatActivity() {
 
         }.start()
 
-        showRandomImage()
-
 
     }
 
@@ -126,11 +124,6 @@ class MainActivity : AppCompatActivity() {
 
         }
         handler.post(runnable)
-
-
-    }
-
-    private fun showRandomImage() {
 
 
     }
