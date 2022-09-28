@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="#E86C0626"
-    >
+    tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/startButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="23dp"
+        android:layout_marginBottom="31dp"
         android:background="@drawable/custom_start_button"
+        android:onClick="startGame"
+
+
         android:text="@string/start"
-
-
         android:textAllCaps="false"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -73,6 +73,7 @@
             android:layout_height="155dp"
             android:layout_row="0"
             android:layout_column="0"
+            android:contentDescription="@string/no"
             android:onClick="incScore"
             app:srcCompat="@drawable/mrspock"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -84,6 +85,7 @@
             android:layout_row="0"
             android:layout_column="1"
             android:contentDescription="@string/no"
+            android:onClick="incScore"
             app:srcCompat="@drawable/mrspock" />
 
         <ImageView
@@ -93,6 +95,7 @@
             android:layout_row="0"
             android:layout_column="2"
             android:contentDescription="@string/no"
+            android:onClick="incScore"
             app:srcCompat="@drawable/mrspock" />
 
         <ImageView
@@ -113,6 +116,7 @@
             android:layout_row="1"
             android:layout_column="1"
             android:contentDescription="@string/no"
+            android:onClick="incScore"
             app:srcCompat="@drawable/mrspock" />
 
         <ImageView
@@ -122,6 +126,7 @@
             android:layout_row="1"
             android:layout_column="2"
             android:contentDescription="@string/no"
+            android:onClick="incScore"
             app:srcCompat="@drawable/mrspock" />
 
         <ImageView
@@ -142,6 +147,7 @@
             android:layout_row="2"
             android:layout_column="1"
             android:contentDescription="@string/no"
+            android:onClick="incScore"
             app:srcCompat="@drawable/mrspock" />
 
         <ImageView
@@ -151,6 +157,7 @@
             android:layout_row="2"
             android:layout_column="2"
             android:contentDescription="@string/no"
+            android:onClick="incScore"
             app:srcCompat="@drawable/mrspock" />
     </GridLayout>
 
@@ -159,11 +166,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:text="Score: 0"
+        android:text="@string/score_0"
+
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        android:textStyle="normal"
+        android:textColor="#E84DA2D1"
+        android:textSize="26sp"
+        android:textStyle="bold"
 
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -176,9 +184,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
-        android:text="Time: 20 s"
+        android:text="@string/time_20_s"
         android:textAlignment="center"
-        android:textColor="#C50808"
+        android:textColor="@color/white"
         android:textSize="27sp"
 
         android:textStyle="bold"

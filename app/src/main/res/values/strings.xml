@@ -3,4 +3,6 @@
     <string name="no">no</string>
     <string name="start">Start</string>
     <string name="live_long_and_prosper">Live long and Prosper!</string>
+    <string name="score_0">Score: 0</string>
+    <string name="time_20_s">Time: 20 s</string>
 </resources>
